@@ -3,33 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ankit's Portfolio</title>
-    <script src="script"></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="main-cont">
-      <div id="port-img-container">
-        <img id="port-img" src="Media/IMG_4377.jpg" alt="ankit's-image" />
-      </div>
-      <div id="content-box">
+    <header>
+      <aside>
+        <h1>Aside</h1>
+        <img id="portfolio-image" src="Media/profile_image.jpg" alt="profile-image" />
+      </aside>
+
+      <div id="intro-content">
+        <h1>intro-content</h1>
+
         <nav>
           <a href="#about">About</a>
           <a href="#edu">Educations</a>
           <a href="#skill">Skills</a>
           <a href="#project">Projects</a>
-          <a href="">Experiences</a>
+          <a href="exp">Experiences</a>
         </nav>
 
-        <div id="name-cont">
+        <section id="name-cont">
           <h4>Hi, my name is <span id="my-name">Ankit Gupta</span></h4>
-        </div>
+        </section>
 
         <div id="home">
           <h1>Full Stack Web Developer & DevOps Engineer</h1>
         </div>
 
-        <div id="about">git 
+        <div id="about">
           <p id="about-content">
             I'm a mechanical engineer who is a seasoned Full Stack Web Developer
             and DevOps Engineer with a passion for crafting innovative and
@@ -38,78 +42,85 @@
             skills and a results-driven mindset to every project.
           </p>
         </div>
-        <div id="edu">
-          <h2>Educations</h2>
-          <h4 class="institue">Meghnad Saha Institute of Technology</h4>
-          <p>B.Tech in Mechanical Engineering</p>
-          <p>From 2019 to 2023</p>
-          <p>CGPA - 8.34</p>
-
-          <h4 class="institue">Calcutta Public School</h4>
-          <p>ISC</p>
-          <p>From 2016 to 2018</p>
-          <p>Percentage - 76%</p>
-
-          <h4 class="institue">Sri Ram Narayan Singh Memorial High School</h4>
-          <p>ICSE</p>
-          <p>From 2019 to 2023</p>
-          <p>CGPA - 8.34</p>
-        </div>
-
-        <div id="exp">
-          <h2>Experience</h2>
-          <h4>As a Professional</h4>
-          <ul>
-            <li>
-              <p>Trainee DevOps Engineer @ Kreeti Technologies</p>
-              <p>From 10th May to 3rd Nov</p>
-            </li>
-          </ul>
-
-          <h4>As a student @ MSIT</h4>
-          <ul>
-            <li>Technical Head of the American Society of Mechanical Engineers MSIT Student Chapter</li>
-            <li>Patent Applied for project named Ergonomic Braille Keyboard</li>
-            <li>Former Intern @ Gardern Reach Shipbuilders and Engineering Ltd.</li>
-            <li>Former Intern @ Lions Club for the event Hriday: Amphan & Covid-19 relief Initiative</li>
-            <li>Collaborated with Apex Management Company to Manufacture Automated Sanitizing Gate</li>
-            <li>Participated in numerous TechFest, 2nd runner-up in Srijan:Jadavpur in line following robot compitition</li>
-          </ul>
-        </div>
-
-        <div id="skill">
-          <h2>Skills</h2>
-          <ul>
-            <li>AWS</li>
-            <li>CI/CD</li>
-            <li>Git</li>
-            <li>Terraform</li>
-            <li>Ruby</li>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>HTML/CSS</li>
-            <li>Linux</li>
-            <li>Node.js</li>
-          </ul>
-        </div>
-
-        <div id="project">
-          <h2>Projects</h2>
-          <ol>
-            <li>Ergonomic Braille Keyboard</li>
-            <li>Fully Automated Fire-Fighting Robot</li>
-            <li>Agriculture Monitoring System</li>
-            <li>Line Follower & Color-Sensing Robot</li>
-            <li>Home Automation and Home Security</li>
-            <li>Unusual Vibration Detector</li>
-            <li>Cold Storage & Fishery Monitoring System</li>
-            <li>Lockgate Automation & Waste Management of Canals</li>
-            <li>Cyclorotor Drone (Final Year Project) Simulation</li>
-          </ol>
-        </div>
       </div>
-      <!--  content-box -->
-    </div>
-    <!-- main-cont -->
+    </header>
+
+    <main>
+      <h1>Main</h1>
+
+      <div id="edu">
+        <h2>Educations</h2>
+        <h4 class="institue">Meghnad Saha Institute of Technology</h4>
+        <p>B.Tech in Mechanical Engineering</p>
+        <p>From 2019 to 2023</p>
+        <p>CGPA - 8.34</p>
+
+        <h4 class="institue">Calcutta Public School</h4>
+        <p>ISC</p>
+        <p>From 2016 to 2018</p>
+        <p>Percentage - 76%</p>
+
+        <h4 class="institue">Sri Ram Narayan Singh Memorial High School</h4>
+        <p>ICSE</p>
+        <p>From 2019 to 2023</p>
+        <p>CGPA - 8.34</p>
+      </div>
+
+      <div id="exp">
+        <h2>Experience</h2>
+        <h4>As a Professional</h4>
+        <ul>
+          <li>
+            <p>Trainee DevOps Engineer @ Kreeti Technologies</p>
+            <p>From 10th May to 3rd Nov</p>
+          </li>
+        </ul>
+
+        <h4>As a student @ MSIT</h4>
+        <ul>
+          <li>Technical Head of the American Society of Mechanical Engineers MSIT Student Chapter</li>
+          <li>Patent Applied for project named Ergonomic Braille Keyboard</li>
+          <li>Former Intern @ Gardern Reach Shipbuilders and Engineering Ltd.</li>
+          <li>Former Intern @ Lions Club for the event Hriday: Amphan & Covid-19 relief Initiative</li>
+          <li>Collaborated with Apex Management Company to Manufacture Automated Sanitizing Gate</li>
+          <li>Participated in numerous TechFest, 2nd runner-up in Srijan:Jadavpur in line following robot compitition</li>
+        </ul>
+      </div>
+
+      <div id="skill">
+        <h2>Skills</h2>
+        <ul>
+          <li>AWS</li>
+          <li>CI/CD</li>
+          <li>Git</li>
+          <li>Terraform</li>
+          <li>Ruby</li>
+          <li>Java</li>
+          <li>Javascript</li>
+          <li>HTML/CSS</li>
+          <li>Linux</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+
+      <div id="project">
+        <h2>Projects</h2>
+        <ol>
+          <li>Ergonomic Braille Keyboard</li>
+          <li>Fully Automated Fire-Fighting Robot</li>
+          <li>Agriculture Monitoring System</li>
+          <li>Line Follower & Color-Sensing Robot</li>
+          <li>Home Automation and Home Security</li>
+          <li>Unusual Vibration Detector</li>
+          <li>Cold Storage & Fishery Monitoring System</li>
+          <li>Lockgate Automation & Waste Management of Canals</li>
+          <li>Cyclorotor Drone (Final Year Project) Simulation</li>
+        </ol>
+      </div>
+    </main>
+
+    <footer>
+      <h1>Footer</h1>
+    </footer>
   </body>
 </html>
