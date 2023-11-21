@@ -14,11 +14,13 @@ aside {
     width: 500px;
     height: 900px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 #portfolio-image {
     width: 100%;
-    height: auto;
-    
 }
 
 #intro-content{
