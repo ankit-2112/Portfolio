@@ -66,12 +66,12 @@ nav a:hover{
     font-weight: 400;
     color: black;
 }
-#home {
+#title {
     /* border: 2px solid black; */
     margin-top: 30px;
     margin-right: 440px;
 }
-#home h1 {
+#title h1 {
     font-size: 60px;
     font-weight: 600;
 }
@@ -81,28 +81,50 @@ nav a:hover{
     margin-top: 100px;
     margin-right: 340px;
 }
-#about span{
-    /* border: 2px solid black; */
-}
 #about-content {
     margin-top: 100px;
 }
 
 main {
-    /* border: 8px solid black; */
-    /* background-color: rgb(148, 148, 214); */
-    padding-left: 200px;
+    border: 4px solid black;
+    background-color: rgb(148, 148, 214);
+    padding-top: 10px;
+    padding-left:300px;
     padding-right: 300px;
     margin-left: 40px;
 }
-#edu {
-    border: 2px solid white;
+
+/* ________Education Section_______ */
+
+.pointer {
+    /* border: 2px solid black; */
+    width: 180px;
+    display: block;
+    float: left;
+    margin-left: -230px;
+    margin-top: 75px;
+    
 }
-#edu h2{
-    font-size: 70px;
+.pointer img {
+    width: 100%;
+}
+.title {
+    /* border: 2px solid black; */
+}
+.title h2 {
+    border: 2px solid black;
+    font-size: 65px;
     margin-top: 50px;
     font-weight: 700;
 }
+#msit {
+    border: 2px solid red;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+/* _______Experience Section_______ */
+
 #exp {
     margin-top: 100px;
     /* border: 2px solid white; */
