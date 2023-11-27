@@ -108,34 +108,43 @@ main {
   width: 100%;
 }
 .title-heading {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .title-heading h2 {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   font-size: 65px;
   margin-top: 50px;
   font-weight: 700;
 }
+#institute-container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin-top: 100px;
+}
+#institute-container #half-1{
+    border: 2px solid black;
+    height: 500px;
+    width: 50%;
+}
+#institute-container #half-2{
+    border: 2px solid black;
+    height: 500px;
+    width: 50%;
+}
+#institute-container img{
+    width: 80px;
+    height: 90px;
+    transform: scaleY(-1);
+}
 
 .institute {
   border: 2px solid red;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: block;
   position: relative;
   width: 700px;
-}
-#vertical-line {
-  position: absolute;
-  top: 180px;
-  bottom: 0;
-  left: 50%; /* Position the line in the middle of the container */
-  border-left: 4px solid rgb(80, 5, 80); /* Set the color and thickness of the line */
-  content: "";
-  display: inline;
-}
-#vertical-line img{
-  width: 100px;
-  margin-left: -53px;
 }
 
 /* _______Experience Section_______ */
