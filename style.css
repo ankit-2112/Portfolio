@@ -296,7 +296,45 @@ main {
 /* __________Footer Section_____________ */
 footer {
   margin-top: 200px;
-  padding: 100px;
+  padding: 80px 100px;
   background-color: black;
   color: white;
+}
+footer h2{
+  font-size: 40px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.info-container{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: -100px;
+  /* padding-right: 50px; */
+}
+.contact-info{
+  /* border: 2px solid whitesmoke; */
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 200px;
+  padding: 10px;
+  cursor: pointer;
+}
+.contact-info:hover{
+  scale: 1.1;
+  background-color: rgb(41, 39, 39);
+}
+.contact-info p{
+  padding-left: 20px;
+  font-size: 20px;
+}
+.contact-info img{
+  width: 50px;
+}
+.invert-img{
+  filter: invert(100%);
 }
