@@ -323,6 +323,7 @@ footer h2{
   margin-right: 200px;
   padding: 10px;
   cursor: pointer;
+  transition: scale 0.2s, background-color 0.2s;
 }
 .contact-info:hover{
   scale: 1.1;
