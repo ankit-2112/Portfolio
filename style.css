@@ -4,13 +4,6 @@
   font-family: "Source Code Pro", monospace;
   font-size: 25px;
 }
-body{
-  /* background-image: url(Media/bg-img.jpg); */
-  /* background-image: url(Media/bg-img2.jpg); */
-  background-repeat:repeat-y;
-  background-size:contain;
-  background-blend-mode: 0.2;
-}
 
 header {
   /* border: 4px solid red; */
@@ -19,6 +12,15 @@ header {
   padding: 20px;
   margin-bottom: 100px;
 }
+header::before{
+  background: url('Media/bg-img2.jpg') repeat center center/cover;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 aside {
   margin-top: 20px;
   margin-left: 20px;
@@ -51,6 +53,7 @@ nav {
   justify-content: right;
   margin-top: 100px;
   margin-right: 100px;
+  /* position: fixed; */
 }
 nav a {
   /* border: 2px solid black; */
