@@ -17,7 +17,7 @@ header {
   margin-bottom: 100px;
 }
 header::before{
-  /* background: url('Media/bg-img2.jpg') repeat center center/cover; */
+  /* backgroundhfj: url('Media/bg-img2.jpg') repeat center center/cover; */
   content: "";
   position: absolute;
   width: 100%;
