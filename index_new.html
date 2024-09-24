@@ -10,16 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="css/style_new.css" />
+    <script defer src="JS/navScrollerScript.js"></script>
+    <script defer src="JS/script.js"></script>
   </head>
-  <body>
-    <nav>
+  <body background="Media\white-simple-textured-design-background.jpg">
+    <nav id="nav-bar">
       <ul>
-        <li><a href="#">HOMEy</a></li>
-        <li><a href="#main">EDUCATION</a></li>
-        <li><a href="#">EXPERIENCE</a></li>
-        <li><a href="#">PROJECT</a></li>
-        <li><a href="#">SKILL</a></li>
+        <li><a href="#" class="nav-item">HOME</a></li>
+        <li><a href="#main-section" class="nav-item">EDUCATION</a></li>
+        <li><a href="#" class="nav-item">EXPERIENCE</a></li>
+        <li><a href="#" class="nav-item">PROJECT</a></li>
+        <li><a href="#" class="nav-item">SKILL</a></li>
       </ul>
     </nav>
     <header>
@@ -31,9 +35,9 @@
         />
       </aside>
       <section>
-        <div id="name-container">Hi, my name is <span>Ankit Gupta</span></div>
+        <div id="name-container">Hi, my name is <span id="my-name"></span></div>
 
-        <div id="title">Full Stack Web Developer & DevOps Engineer ﹁</div>
+        <div id="title">Marine Engineer & Full Stack Web Developer ﹁</div>
 
         <div id="about">
           <span>In Short ﹁</span>
@@ -42,7 +46,7 @@
             Stack Web Developer and DevOps Engineer with a passion for crafting
             innovative and efficient solutions. I thrive in the dynamic
             intersection of development and operations, bringing a unique blend
-            of technical skills and a results-driven mindset to every project.┃
+            of technical skills and a results-driven mindset to every project.<span id="blinking-cursor">┃</span>
           </p>
         </div>
 
@@ -53,33 +57,45 @@
       </section>
     </header>
 
-    <main>
-      <div id="education-section">
-        <div class="section-heading">
-          <img class="section-pointer" src="Media/point_line1.png"/>
-          <div class="section-title">EDUCATION</div>
+    <main id="main-section">
+      <div id="education">
+        <div id="heading">
+          <img id="point-line" src="Media/point_line1.png" alt="-----">
+          <h2>Education</h2>
         </div>
-
-        <div id="education-content">
-          <div class="institute" id="rns">
-            Sri R.N.S. Memorial High School﹁
+        <div id="education-container">
+          <div id="left-div">
+            <div class="institute" id="class-10">
+              <h3>10th Standard (ICSE 2016)﹁</h3>
+              <p>Sri Ram Narayan Singh Memorial High School</p>
+              <p>Percentage Aquired: 84%</p>
+            </div>
+            <div class="institute" id="college">
+              <h3>B.Tech in Mechanical Engineering (2019-2023)﹁</h3>
+              <p>Meghnad Saha Institute of Technology</p>
+              <p>CGPA Aquired: 8.54</p>
+            </div>
           </div>
-          <div class="emp-con">eg</div>
-
-          <div class="emp-con">esrg</div>
-          <div class="institute" id="cps">
-            Calcutta Public School﹁
+          <div id="center-div">
+            <img id="plane-doodle" src="Media/plane-doodle.png" alt="plane-doodle">
           </div>
-
-          <div class="emp-con">erg</div>
-          <div class="institute" id="msit">
-            Meghnad Saha Institute of Technology﹁
-          </div>
-
-          <div id="stick-man">
-            man
+          <div id="right-div">
+            <div class="institute" id="class-12">
+              <h3>12th Standard (ISC 2018)﹁</h3>
+              <p>Calcutta Public School</p>
+              <p>Percentage Aquired: 76%</p>
+            </div>
+            <div class="institute" id="gme59">
+              <h3>Graduate Marine Engineering (2024)﹁</h3>
+              <p>Great Eastern Institute of Maritime Studies</p>
+              <p>Rank Aquired: 7th</p>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div id="experience">
+
       </div>
     </main>
 

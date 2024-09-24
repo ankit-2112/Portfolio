@@ -1,18 +1,26 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
 }
-nav{
+
+#nav-bar{
     /* border: 2px solid black; */
     background-color: rgba(255, 255, 255, 0.801);
-    backdrop-filter: blur(2px);
+    /* background-color: rgba(222, 220, 220, 0.815); */
+
+    backdrop-filter: blur(9px);
+    border-radius: 20px;
 
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     margin: 0rem 3rem;
-    height: 5rem;
+    margin-top: 3rem;
+    height: 7rem;
 
     display: flex;
     justify-content: end;
@@ -45,12 +53,9 @@ header{
     /* border: 2px solid red; */
     /* background-color: rgb(194, 194, 126); */
     margin: 0rem 3rem;
-
     height: 100vh;
     /* width: 100%; */
-
     font-size: 1.2rem;
-
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -62,14 +67,12 @@ aside{
     /* width: 27%; */
     height: 100vh;
     background-color: black;
+    /* background-color: rgba(255, 255, 255, 0); */
     z-index: 5;
-
     position: relative;
-    top: -6rem;
-
+    top: -12rem;
     box-shadow: 80px 80px 3px rgb(233, 228, 228);
     border-top-left-radius: 15px;
-
     z-index: 999;
 }
 #profile-image{
@@ -79,7 +82,6 @@ aside{
 header section{
     /* border: 2px solid black; */
     /* background-color: rgb(230, 230, 164); */
-
     width: 60%;
     margin-left:10rem;
     /* margin-right: 10rem; */
@@ -103,6 +105,14 @@ header section{
 #about{
     margin-top: 4rem;
 }
+#blinking-cursor{
+    animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+}
 #about p{
     margin-top: 4rem;
 }
@@ -111,16 +121,14 @@ header section{
     /* border: 2px solid black; */
     box-shadow: 0px 0px 25px 5px rgb(218, 212, 212);
     font-weight: 500;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     margin-top: 4rem;
     width: 10rem;
     height: 3rem;
-
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 #resume-button img{
     width: 2rem;
@@ -130,60 +138,85 @@ header section{
     transform: scale(1.05);
     box-shadow: 0px 0px 35px 15px rgb(218, 212, 212);
 }
+#resume-button:active{
+    scale: 0.91;
+    box-shadow: 0px 0px 10px 5px rgb(218, 212, 212);
+}
 
-main{
+#main-section{
+    height: 171.5vh;
     /* border: 2px solid red; */
-    /* background-color: rgb(194, 218, 238); */
     margin: 0rem 3rem;
 }
-.section-heading{
-    border: 2px solid yellow;
+#heading{
     display: flex;
-    align-items: center;
+    /* border: 2px solid red; */
+}
+#point-line{
+    width: 10%;
+    height: 2%;
+    /* border: solid blue; */
+    margin-right: 2rem;
     position: relative;
-    top: 9rem;
+    top: 1.5rem;
 }
-.section-pointer{
-    width: 10rem;
-}
-.section-title{
+#heading > h2{
+    /* border: 2px solid yellow; */
     font-size: 3.5rem;
-    font-weight: 800;
-    margin-left: 2rem;
 }
-
-#education-section{
-    height: 100vh;
-    background-color: aqua;
-}
-#education-content{
-    border: 2px solid red;
+#education-container{
+    /* border: 2px solid purple; */
     position: relative;
-    top: 9rem;
-    height: 76%;
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3.1fr);
-    gap: 10px;
+    top: 3rem;
+    display: flex;
+    height: 110vh;
+}
+#left-div{
+    /* background-color: aquamarine; */
+    width:45%;
+    text-align: center;
+}
+#center-div{
+    /* background-color: rgb(96, 198, 230); */
+    width: 10%;
+    text-align: center;
+    border-left: 6px solid rgb(239, 130, 52);
+    border-right: 6px solid rgb(239, 130, 52);
+    /* border-bottom: 6px solid rgb(239, 130, 52); */
+    /* border-left: 2px solid black; */
+}
+#plane-doodle{
+    width: 8rem;
+    transform: rotate(180deg);
+    position: sticky;
+    top: 30%;
+}
+#right-div{
+    /* background-color: chocolate; */
+    width: 45%;
+    text-align: center;
 }
 .institute{
-    border: 2px solid violet;
+    /* border: 4px solid black; */
+    height: 15rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.emp-con{
-    border: 2px solid violet;
+#class-12{
+    position: relative;
+    top: 15rem;
 }
-#rns{
-    grid-area: "rns";
+#gme59{
+    position: relative;
+    top: 30rem;
 }
-#cps{
-    grid-area: "cps";
+#college{
+    position: relative;
+    top: 15rem;
 }
-#msit{
-    grid-area: "msit";
-}
-#stick-man{
-    grid-column: 2;
-    grid-area: "stick-man";
-    border: 2px solid black;
+
+footer{
+    height: 100vh;
 }
