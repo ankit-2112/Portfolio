@@ -1,9 +1,9 @@
 console.log("Working script");
 let resume_button = document.getElementById("resume-button");
 resume_button.addEventListener("click",function(){
-    console.log("click registered");
-    
-    // window.open("https://drive.google.com/file/d/1NK7OE3RSh6wRewbP5iDMays5uTIk0Kn9/view?usp=sharing","_blank");
+    console.log("Fetching resume ...");
+    window.open("https://drive.google.com/file/d/1NK7OE3RSh6wRewbP5iDMays5uTIk0Kn9/view?usp=sharing","_blank");
+    console.log("resume fechted!")
 });
 
 const text = "Ankit Gupta";
