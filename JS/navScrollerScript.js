@@ -8,7 +8,7 @@ gsap.to("#nav-bar", {
     },
     top: "0.9rem",
     height: "2rem",
-    backgroundColor: "rgba(222, 220, 220, 0.815)",
+    backgroundColor: "rgba(153, 205, 50, 0.621)",
     duration: 1
 });
 
