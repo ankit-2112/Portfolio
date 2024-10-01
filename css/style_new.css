@@ -45,9 +45,9 @@ nav ul li a{
     transition: all 0.3s ease;
 }
 nav ul li a:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(153, 205, 50, 0.621);
     padding-bottom: 1rem;
-    color: black;
+    color: rgba(153, 205, 50, 0.621);
 }
 header{
     /* border: 2px solid red; */
