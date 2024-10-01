@@ -15,7 +15,7 @@ class12Button.addEventListener("click",function(){
 let collegeButton = document.getElementById("college");
 collegeButton.addEventListener("click",function(){
     console.log("Fetching college documents ...");
-    window.open("","_blank");
+    window.open("https://drive.google.com/drive/folders/1DoYRrlLmqTFH4heq61XSG95I5JUmvV-M?usp=sharing","_blank");
     console.log("Fetched college documents.");
 });
 
